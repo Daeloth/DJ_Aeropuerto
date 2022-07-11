@@ -1,0 +1,32 @@
+{% extends 'totem/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md">
+        <form action="" id="login" name="login">
+            <div class="form-group">
+                <br>
+                <br>
+                <br>
+                <h3>Ventana de ingreso Colaborador, Bienvenid@</h3>
+                <label for="nom">Ingrese su Rut </label>
+                <input type="text" class="form-control" id="rut" name="rut" />
+                <br>
+                <a
+                href="{% url 'appadmin/registrochofer' %}"
+                class="btn btn-primary"
+                >continuar
+                </a>
+                <br>
+                <br>
+                <a
+                href="{% url 'appadmin/index' %}"
+                class="btn btn-primary"
+                >Volver al inicio
+                </a>
+              </div>
+        </form>
+    </div>
+</div>
+    
+{% endblock content %}

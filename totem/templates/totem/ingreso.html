@@ -1,0 +1,20 @@
+{% extends 'totem/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md">
+        <form action="" id="login" name="login">
+            <div class="form-group">
+                <label for="nom">Ingrese su Rut </label>
+                <input type="text" class="form-control" id="rut" name="rut" />
+                <br>
+                <a
+                href="{% url 'totem/transfer' %}"
+                class="btn btn-primary"
+                >Continuar</a>
+
+                </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

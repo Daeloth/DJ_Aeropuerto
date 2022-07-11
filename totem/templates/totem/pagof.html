@@ -1,0 +1,31 @@
+{% extends 'totem/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md">
+        <div class="card">
+            <img
+              class="card-img-top"
+              src="index.html"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aeropuerto</h5>
+              <p class="card-text">
+                <br />
+                <br />
+                Su Ticket fue emitido con exito! 
+                <br>
+                <br>
+              </p>
+              <a
+                href="{% url 'totem/index' %}"
+                class="btn btn-primary"
+                >Seleccione esta opcion para volver a la pagina principal</a
+              >
+
+            </div>
+          </div>
+    </div>
+</div>
+{% endblock content %}
